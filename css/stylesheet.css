@@ -1,179 +1,252 @@
-/* 
-COLOR PALETTE
-https://coolors.co/e4fde1-8acb88-62466b-999ac6-2d3142
-F7FFF7 - Almost white
-62466B - A royal purple
-999AC6 - A pastel blue/purple
-2D3142 - A dark blue, almost black
-4281A4 - Ocean Blue
-B2B1CF - Pastel purple
-*/
-
-/* Global styles
----------------------------------------------------- */
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  /* background-color: rgb(216, 216, 216); */
 }
 body {
-  color: #2d3142;
+  /* background-color: none; */
+  background-image: url("../img/booger-bg-small.png");
+  background-size: 25%;
+  background-attachment: fixed;
+}
+/* Profile pic styles */
+.icon-pic {
+  float: left;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/icon-art.png");
+  background-size: cover;
   margin: 0;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
 }
-img {
-  width: 300px;
+.icon-pic:hover {
+  background-image: url("../img/icon-pic.png");
 }
-a {
-  color: #2d3142;
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  float: left;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 24vw;
+  margin: 2% 0;
 }
-a:hover {
+.sidebar-text {
+  background-color: rgb(87, 111, 91);
+  width: 24vw;
+  padding: 10px 30px;
+  margin: 20px 0;
+  text-align: center;
+  opacity: 0.8;
+}
+.sidebar-item.title {
+  color: rgb(245, 243, 243);
   text-decoration: none;
+  font-family: "Courgette", cursive;
+  font-size: 40px;
 }
-h1 {
-  font-size: 75px;
+.sidebar-item.desc {
+  font-size: 20px;
+  padding: 5px 0;
 }
-h2 {
+.sidebar-item.web-dev {
+  font-size: 30px;
+  padding: 20px 0 0 0;
+  color: rgb(48, 72, 52);
+}
+.sidebar-item.aboutme {
+  font-size: 30px;
+  padding: 20px 0 0 0;
+  color: rgb(48, 72, 52);
+}
+.logo {
+  width: 6%;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 10px;
+}
+/* Category grid styles */
+.category-grid-container {
+  position: relative;
+  float: right;
+  display: grid;
+  width: 75vw;
+  height: 100vh;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+.web-dev.category-grid-item {
+  background-image: url("../img/web-dev.png");
+  background-position: left;
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(252, 246, 246);
   font-size: 35px;
 }
-h1,
-h2 {
-  font-family: "Nothing You Could Do", cursive;
-  font-weight: 400;
-  margin: 0;
+.web-dev.category-grid-item:hover {
+  color: rgb(197, 191, 109);
+  font-size: 35px;
 }
-.content-wrap {
-  max-width: 800px;
-  width: 85%;
-  margin: 0 auto;
-  padding: 60px 0;
-}
-h3 {
-  margin-bottom: 0;
-}
-.item-details h3 + p {
-  font-style: italic;
-}
-.item-details h3 ~ p {
-  margin: 0;
-}
-.divider > section {
-  border-bottom: 1px dashed #2d3142;
-  padding: 25px 0;
-}
-.divider > section:last-of-type {
-  border-bottom-style: none;
-}
-
-/* Profile styles
----------------------------------------------------- */
-header {
-  background-color: #2d3142;
-  color: #f7fff7;
-}
-
-/* Projects styles
----------------------------------------------------- */
-.projects {
-  background-color: #c1c1e9;
-}
-.projects a {
-  color: #2d3142;
-}
-.projects .btn {
-  color: #f7fff7;
-  background-color: #2d3142;
+.game-dev.category-grid-item {
+  background-image: url("../img/dragonfly-edit3.jpg");
+  background-position: left;
+  background-size: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  padding: 8px;
-  border-radius: 4px;
-  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  font-weight: 600;
 }
-.projects .btn:hover {
-  background: rgba(45, 49, 66, 80%);
+.game-dev.category-grid-item:hover {
+  color: rgb(197, 191, 109);
+  font-size: 35px;
+}
+.about-me.category-grid-item {
+  background-image: url("../img/lofi-sam-edit.jpg");
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(252, 246, 246);
+  font-size: 35px;
+  font-weight: 600;
+}
+.about-me.category-grid-item:hover {
+  color: rgb(197, 191, 109);
+  font-size: 35px;
+}
+.tpp.category-grid-item {
+  background-image: url("../img/TPP_paws.png");
+  background-size: 120%;
+  background-position: bottom left;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(252, 246, 246);
+  font-size: 35px;
+  font-weight: 600;
+}
+.tpp.category-grid-item:hover {
+  color: rgb(197, 191, 109);
+  font-size: 35px;
+}
+/* Web development grid */
+.projects-grid-container {
+  position: relative;
+  float: right;
+  display: grid;
+  width: 75vw;
+  height: 200vh;
+  font-size: 20px;
+  /* padding: 15px 0; */
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
+  /* background-color: rgb(216, 216, 216); */
 }
 .project-item {
-  overflow: hidden;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  /* padding: 10px; */
+  background-color: rgb(245, 244, 225);
+  align-items: center;
+  justify-content: center;
+  /* border: solid #b7c8a8 2px; */
 }
-.project-item h3 {
-  margin-top: 0;
+.project-item-odd {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  /* padding: 10px; */
+  background-color: rgb(211, 211, 186);
+  align-items: center;
+  justify-content: center;
+  /* border: solid #b7c8a8 2px; */
 }
-
-/* Work Experience styles
----------------------------------------------------- */
-.work-experience {
-  background-color: #4281a4;
+.project-title {
+  text-decoration: none;
+  margin: 0;
+  padding: 10px 20px;
+  background-color: rgb(245, 244, 225);
+  color: rgb(66, 82, 68);
 }
-.achievements {
-  font-weight: bold;
+.project-title-odd {
+  text-decoration: none;
+  margin: 0;
+  padding: 10px 20px;
+  background-color: rgb(211, 211, 186);
+  color: rgb(87, 111, 91);
 }
-
-/* Education styles
----------------------------------------------------- */
-.education {
-  background-image: url(../images/annie-spratt-unsplash.jpg);
-  background-size: cover;
-  background-position: bottom right;
-  padding: 50px 0;
+.project-title:hover {
+  color: rgb(160, 172, 142);
 }
-
-/* Conact Info styles
----------------------------------------------------- */
-footer {
-  background-color: #2d3142;
-  color: #f7fff7;
+.project-title-odd:hover {
+  color: rgb(233, 238, 230);
 }
-footer a {
-  color: #999ac6;
+.project-title-text {
+  font-family: "Courgette", cursive;
+  font-size: 40px;
 }
-.contact-list {
-  list-style-type: none;
-  padding: 0;
+.project-description {
+  padding: 20px 0 0 0;
+  text-align: center;
+  color: rgb(28, 28, 28);
+  font-size: 17px;
+  max-width: 80%;
 }
-.contact-list a {
-  padding: 15px;
-  display: inline-block;
+.project-img {
+  padding: 20px;
+  background-color: rgb(245, 244, 225);
 }
-
-/* Responsive Styles
----------------------------------------------------- */
-
-/* Larger screens */
-@media screen and (min-width: 852px) {
-  .project-item img {
-    float: left;
-    margin-right: 20px;
-  }
-  .job-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
-  }
-  header,
-  footer {
-    text-align: center;
-  }
-  .contact-list {
-    display: flex;
-    justify-content: center;
-  }
+.project-img-odd {
+  padding: 20px;
+  background-color: rgb(211, 211, 186);
 }
-/* Smaller screens */
-@media screen and (max-width: 850px) {
-  h1 {
-    font-size: 50px;
-    line-height: 1;
-    margin-bottom: 20px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  .contact-list a {
-    padding: 5px;
-  }
+/* About page styles */
+.about {
+  position: relative;
+  width: 75vw;
+  height: 100vh;
+  float: right;
+  font-size: 25px;
+  text-align: left;
+  background-color: rgb(245, 244, 225);
+}
+.about-text.start {
+  padding: 30px 20px 0 30px;
+}
+.about-text {
+  padding: 5px 20px 0 30px;
+}
+/* TPP page styles */
+.tpp-info {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 75vw;
+  float: right;
+  background-color: rgb(113, 136, 119);
+  justify-content: center;
+  align-items: center;
+}
+.tpp-image {
+  width: 50%;
+}
+.tpp-descr {
+  width: 80%;
 }
