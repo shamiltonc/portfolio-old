@@ -1,0 +1,179 @@
+/* 
+COLOR PALETTE
+https://coolors.co/e4fde1-8acb88-62466b-999ac6-2d3142
+F7FFF7 - Almost white
+62466B - A royal purple
+999AC6 - A pastel blue/purple
+2D3142 - A dark blue, almost black
+4281A4 - Ocean Blue
+B2B1CF - Pastel purple
+*/
+
+/* Global styles
+---------------------------------------------------- */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  color: #2d3142;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+img {
+  width: 300px;
+}
+a {
+  color: #2d3142;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 75px;
+}
+h2 {
+  font-size: 35px;
+}
+h1,
+h2 {
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 400;
+  margin: 0;
+}
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+h3 {
+  margin-bottom: 0;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+.divider > section {
+  border-bottom: 1px dashed #2d3142;
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom-style: none;
+}
+
+/* Profile styles
+---------------------------------------------------- */
+header {
+  background-color: #2d3142;
+  color: #f7fff7;
+}
+
+/* Projects styles
+---------------------------------------------------- */
+.projects {
+  background-color: #c1c1e9;
+}
+.projects a {
+  color: #2d3142;
+}
+.projects .btn {
+  color: #f7fff7;
+  background-color: #2d3142;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.projects .btn:hover {
+  background: rgba(45, 49, 66, 80%);
+}
+.project-item {
+  overflow: hidden;
+}
+.project-item h3 {
+  margin-top: 0;
+}
+
+/* Work Experience styles
+---------------------------------------------------- */
+.work-experience {
+  background-color: #4281a4;
+}
+.achievements {
+  font-weight: bold;
+}
+
+/* Education styles
+---------------------------------------------------- */
+.education {
+  background-image: url(../images/annie-spratt-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom right;
+  padding: 50px 0;
+}
+
+/* Conact Info styles
+---------------------------------------------------- */
+footer {
+  background-color: #2d3142;
+  color: #f7fff7;
+}
+footer a {
+  color: #999ac6;
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
+
+/* Responsive Styles
+---------------------------------------------------- */
+
+/* Larger screens */
+@media screen and (min-width: 852px) {
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  header,
+  footer {
+    text-align: center;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* Smaller screens */
+@media screen and (max-width: 850px) {
+  h1 {
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .contact-list a {
+    padding: 5px;
+  }
+}
