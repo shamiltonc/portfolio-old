@@ -112,6 +112,14 @@ body {
   color: rgb(197, 191, 109);
   font-size: 35px;
 }
+.art-description {
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  width: 70%;
+  margin: auto;
+}
 /* About Me item styles */
 .about-me.category-grid-item {
   background-image: url("../img/lofi-sam-edit.jpg");
@@ -236,6 +244,21 @@ body {
 }
 .about-text {
   padding: 5px 20px 0 30px;
+  width: 80%;
+  margin: auto;
+}
+.about-div {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 90%;
+  margin: auto;
+  padding: 0 0 30px 0;
+}
+.about-text-header {
+  font-size: 100px;
+  font-style: italic;
+  padding: 5px;
+  margin: 20px;
 }
 /* TPP page styles */
 .tpp-info {
