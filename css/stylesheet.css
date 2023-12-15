@@ -76,9 +76,9 @@ body {
   width: 75vw;
   height: 100vh;
   grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
-/* Web Dev item styles */
+/* Project item styles */
 .web-dev.category-grid-item {
   background-image: url("../img/web-dev.png");
   background-position: left;
@@ -93,32 +93,6 @@ body {
 .web-dev.category-grid-item:hover {
   color: rgb(197, 191, 109);
   font-size: 35px;
-}
-/* Art item styles */
-.art.category-grid-item {
-  background-image: url("../img/dragonfly-edit3.jpg");
-  background-position: left;
-  background-size: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 35px;
-  font-weight: 600;
-}
-.art.category-grid-item:hover {
-  color: rgb(197, 191, 109);
-  font-size: 35px;
-}
-.art-description {
-  margin: 5px;
-  padding: 10px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  width: 70%;
-  margin: auto;
 }
 /* About Me item styles */
 .about-me.category-grid-item {
@@ -137,25 +111,7 @@ body {
   color: rgb(197, 191, 109);
   font-size: 35px;
 }
-/* Thieving Paws Painting item styles */
-.tpp.category-grid-item {
-  background-image: url("../img/TPP_paws.png");
-  background-size: 120%;
-  background-position: bottom left;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: rgb(252, 246, 246);
-  font-size: 35px;
-  font-weight: 600;
-}
-.tpp.category-grid-item:hover {
-  color: rgb(197, 191, 109);
-  font-size: 35px;
-}
-/* Web development grid */
+/* Projects grid */
 .projects-grid-container {
   position: relative;
   float: right;
@@ -232,10 +188,10 @@ body {
 /* About page styles */
 .about {
   position: relative;
-  width: 75%;
-  height: 100%;
+  width: 75vw;
+  height: 100vh;
   float: right;
-  font-size: 25px;
+  font-size: 21px;
   text-align: left;
   background-color: rgb(245, 244, 225);
 }
@@ -255,126 +211,8 @@ body {
   padding: 0 0 30px 0;
 }
 .about-text-header {
-  font-size: 100px;
+  font-size: 70px;
   font-style: italic;
   padding: 5px;
   margin: 20px;
-}
-/* TPP page styles */
-.tpp-info {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 75vw;
-  float: right;
-  background-color: rgb(113, 136, 119);
-  justify-content: center;
-  align-items: center;
-}
-.tpp-image {
-  width: 50%;
-}
-.tpp-descr {
-  width: 80%;
-}
-/* Art page styles */
-.slideshow-container {
-  position: relative;
-  margin: auto;
-  float: right;
-  height: 100vh;
-  width: 75vw;
-  background: rgb(113, 136, 119);
-}
-.art-dots {
-  position: relative;
-  margin: auto;
-}
-.art-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-/* Hide images by default */
-.mySlides {
-  display: none;
-}
-/* Next & Previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: rgb(224, 215, 215);
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-}
-/* Caption text */
-.img-caption {
-  color: rgb(224, 215, 215);
-  font-size: 20px;
-  padding: 20px 10px;
-  margin: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  width: 50%;
-  font-weight: bold;
-}
-/* Number text (1/10 etc) */
-.numberText {
-  color: rgb(224, 215, 215);
-  font-size: 20px;
-  padding: 8px 12px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  width: 50%;
-  font-weight: bold;
-}
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: rgb(73, 69, 69);
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active,
-.dot:hover {
-  background-color: #f3f3f3;
-}
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
 }
